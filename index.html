@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The LAC Slums Comprehensive Dataset</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#" class="site-title">LAC Slums Dataset</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#lectures">Lectures</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>The LAC Slums Comprehensive Dataset</h1>
+      <p class="subtitle">
+        A harmonized, multi-country panel of informal settlements across Latin America and the Caribbean
+      </p>
+      <p class="authors">
+        Paul Gertler &nbsp;·&nbsp; Marco González-Navarro &nbsp;·&nbsp;
+        Raimundo Undurraga &nbsp;·&nbsp; Joaquín Urrego &nbsp;·&nbsp; Matías Labbe
+      </p>
+      <span class="status-badge">Working Paper — Data under active assembly</span>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        This dataset compiles official government registries of informal settlements (slums, favelas,
+        campamentos, asentamientos) across 11 Latin American countries, harmonized into a common schema
+        and linked to city boundaries and household surveys. The goal is to track slum formation,
+        growth, and formalization across multiple census waves.
+      </p>
+      <p>
+        The project covers two analytical branches:
+      </p>
+      <ul>
+        <li><strong>Slum-level panel</strong> — location, size, infrastructure access, and distance to urban amenities across waves.</li>
+        <li><strong>Household-level panel (Chile)</strong> — who lives in informal settlements, entry and exit dynamics, and resident selection.</li>
+      </ul>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.6rem; font-size:1rem; color:#444;">Countries covered</h3>
+      <div class="countries">
+        <span class="country-tag">Argentina</span>
+        <span class="country-tag">Brazil</span>
+        <span class="country-tag">Chile</span>
+        <span class="country-tag">Colombia</span>
+        <span class="country-tag">Costa Rica</span>
+        <span class="country-tag">Guatemala</span>
+        <span class="country-tag">Honduras</span>
+        <span class="country-tag">Mexico</span>
+        <span class="country-tag">Nicaragua</span>
+        <span class="country-tag">Paraguay</span>
+        <span class="country-tag">Uruguay</span>
+      </div>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.6rem; font-size:1rem; color:#444;">Key variables</h3>
+      <p>
+        For each slum unit: country, census year, settlement name, municipality, household count,
+        access to electricity, piped water, sewerage, land title, and polygon geometry.
+        Slum locations are linked to the nearest urban boundary and classified as
+        <em>inside city</em>, <em>fringe</em> (&lt;50 km buffer), or <em>remote</em>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section id="data">
+    <div class="container">
+      <h2>Data</h2>
+      <p>
+        The dataset is released as a harmonized CSV and spatial (GeoPackage/shapefile) panel.
+        Country-level raw registries are described below. Downloads and access instructions
+        will be posted here once the dataset is finalized.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Years / Waves</th>
+            <th>Source</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Argentina</td>
+            <td>2013, 2016, 2018, 2023</td>
+            <td>ReNaBaP — National Registry of Popular Neighborhoods</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Brazil</td>
+            <td>2000, 2010</td>
+            <td>IBGE — Aglomerados Subnormais</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Chile</td>
+            <td>2011, 2019, 2022</td>
+            <td>MINVU — Catastro Nacional de Campamentos</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Colombia</td>
+            <td>2015</td>
+            <td>UARIV / DANE — Bogotá</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Costa Rica</td>
+            <td>2013</td>
+            <td>MIVAH — National Settlement Registry</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Guatemala</td>
+            <td>2016</td>
+            <td>SEGEPLAN — Precarious Settlements</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Honduras</td>
+            <td>2018</td>
+            <td>CONVIVIENDA — National Settlement Registry</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Mexico</td>
+            <td>2020–2025</td>
+            <td>SEDATU — FSC (Nuevo León, CDMX, Jalisco, and others)</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Nicaragua</td>
+            <td>2013</td>
+            <td>INVUR — National Settlement Registry</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Paraguay</td>
+            <td>2015</td>
+            <td>SENAVITAT — National Settlement Registry</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+          <tr>
+            <td>Uruguay</td>
+            <td>2008, 2010, 2024</td>
+            <td>MVOT — Registro Nacional de Asentamientos</td>
+            <td><em>Coming soon</em></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:1.5rem; margin-bottom:0.75rem; font-size:1rem; color:#444;">Harmonized panel files</h3>
+
+      <div class="placeholder-card">
+        <div class="card-title">panel_latam.csv — Harmonized attribute panel</div>
+        All slum observations, all countries and waves. Common schema:
+        country, year, settlement name, municipality, household count, infrastructure access indicators.
+        <div class="card-meta">Format: CSV &nbsp;|&nbsp; Status: Under assembly &nbsp;|&nbsp; Download: coming soon</div>
+      </div>
+
+      <div class="placeholder-card">
+        <div class="card-title">panel_latam.gpkg — Spatial panel (GeoPackage)</div>
+        Same as CSV plus polygon/point geometry. Mixed geometry (polygon where available, centroid otherwise).
+        <div class="card-meta">Format: GeoPackage &nbsp;|&nbsp; Status: Under assembly &nbsp;|&nbsp; Download: coming soon</div>
+      </div>
+
+      <div class="placeholder-card">
+        <div class="card-title">Chile household panel — Catastro de Campamentos 2011–2022</div>
+        Individual-level merged survey across three waves. Variables: education, gender, income, housing quality,
+        year of arrival, aspirations.
+        <div class="card-meta">Format: Stata (.dta) &nbsp;|&nbsp; Status: Restricted &nbsp;|&nbsp; Access: contact authors</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lectures -->
+  <section id="lectures">
+    <div class="container">
+      <h2>Lectures &amp; Slides</h2>
+      <p>
+        Course materials for a crash course on informal settlements in Latin America.
+        Slides and notes will be posted here as they are finalized.
+      </p>
+
+      <div class="placeholder-card">
+        <div class="card-title">Lecture 1 — What are slums? Definitions, measurement, and global context</div>
+        Concepts: UN-Habitat definition, shelter deprivation indicators, slum prevalence trends globally and in LAC.
+        <div class="card-meta">Slides: coming soon &nbsp;|&nbsp; Notes: coming soon</div>
+      </div>
+
+      <div class="placeholder-card">
+        <div class="card-title">Lecture 2 — Data sources and the LAC Slums Dataset</div>
+        How national slum registries are collected; harmonization challenges; the panel construction pipeline.
+        <div class="card-meta">Slides: coming soon &nbsp;|&nbsp; Notes: coming soon</div>
+      </div>
+
+      <div class="placeholder-card">
+        <div class="card-title">Lecture 3 — Location and urban form</div>
+        Where slums locate relative to city centers, employment hubs, and infrastructure. Proximity analysis.
+        <div class="card-meta">Slides: coming soon &nbsp;|&nbsp; Notes: coming soon</div>
+      </div>
+
+      <div class="placeholder-card">
+        <div class="card-title">Lecture 4 — Who lives in slums? Household dynamics and selection</div>
+        Evidence from the Chile Catastro panel: entry, exit, and retention by arrival cohort.
+        <div class="card-meta">Slides: coming soon &nbsp;|&nbsp; Notes: coming soon</div>
+      </div>
+
+      <div class="placeholder-card">
+        <div class="card-title">Lecture 5 — Formalization and upgrading policies</div>
+        Property titling, infrastructure provision, eviction. Evidence from Argentina, Brazil, and Chile.
+        <div class="card-meta">Slides: coming soon &nbsp;|&nbsp; Notes: coming soon</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        The LAC Slums Comprehensive Dataset &nbsp;·&nbsp;
+        Contact: <a href="mailto:mrl570@nyu.edu">mrl570@nyu.edu</a>
+      </p>
+      <p style="margin-top:0.4rem;">
+        University of California, Berkeley &nbsp;·&nbsp; New York University &nbsp;·&nbsp;
+        Pontificia Universidad Católica de Chile
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
