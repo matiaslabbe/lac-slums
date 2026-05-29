@@ -102,7 +102,10 @@ nav ul a:hover { color: #1a3a5c; }
   padding: 0.3rem 0.75rem;
   border-radius: 3px;
   border: 1px solid #c5d9ed;
+  text-decoration: none;
 }
+
+.hero .status-badge:hover { background: #ddeaf8; }
 
 /* ---------- Sections ---------- */
 section {
@@ -202,6 +205,21 @@ tr:nth-child(even) td { background: #fafafa; }
   color: #999;
   margin-top: 0.5rem;
 }
+
+/* ---------- Coding exercises button ---------- */
+.btn-exercises {
+  display: inline-block;
+  margin-top: 0.25rem;
+  background: #1a3a5c;
+  color: #fff;
+  font-size: 0.82rem;
+  font-family: Arial, sans-serif;
+  padding: 0.3rem 0.9rem;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.btn-exercises:hover { background: #2e6da4; color: #fff; }
 
 /* ---------- Footer ---------- */
 footer {
